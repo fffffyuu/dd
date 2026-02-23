@@ -1,0 +1,17 @@
+seed: 42
+image_size: 224
+batch_size: 64
+epochs: 40
+learning_rate: 0.0003
+weight_decay: 0.01
+model: efficientnetv2_s
+num_classes: 1024
+mixed_precision: true
+datasets:
+  - name: plantnet
+    root: data/plantnet
+  - name: inaturalist
+    root: data/inaturalist
+  - name: leafsnap
+    root: data/leafsnap
+output_dir: artifacts/train_runs

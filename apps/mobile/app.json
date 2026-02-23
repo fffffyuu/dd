@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "OpenPlant ID",
+    "slug": "openplant-id",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android", "web"],
+    "plugins": ["expo-image-picker"]
+  }
+}
