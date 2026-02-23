@@ -1,0 +1,12 @@
+services:
+  api:
+    build:
+      context: ../services/api
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../services/api/models:/app/models
+    environment:
+      - MODEL_PATH=models/plantnet_efficientnetv2.onnx
+      - DISEASE_MODEL_PATH=models/disease_mobilenetv3.onnx
